@@ -1,0 +1,484 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+body,
+html {
+	margin:0;
+	padding:0;
+	color:#000;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+a
+{
+	text-decoration: none;
+	color: inherit;
+	opacity: 0.9;
+}
+a:hover
+{
+	text-decoration: none;
+	color: inherit;
+	opacity: 1;
+}
+
+.naviElement
+{
+	vertical-align: middle;
+	box-shadow: 0px 0px 15px orange;
+	font-size: 1em;
+	background-color: white;
+	color: gray;
+	min-height: 33px;
+	text-align: center;
+}
+.naviElement:hover
+{
+	background-color: orange;
+	cursor: pointer;
+}
+.naviElement a
+{
+	font-size: 5em;
+}
+.naviElement:hover .el-description
+{
+	color:  black;
+}
+.naviElement:hover a
+{
+	color:  white;
+}
+
+.el-ingredient
+{
+	font-size: 1.65em;
+	padding: auto;
+}
+.naviElement:hover .el-ingredient
+{
+	color: white;
+}
+.slider-description
+{
+	float: right;
+	clear: right;
+}
+.amount-sliders
+{
+/*	float: right;
+	clear: right;*/
+	width: 500px;
+	margin: 5px;
+}
+.slider-description span
+{
+	margin-left: 10px;
+}
+#sliders
+{
+	background-color: rgba(0,0,0,1.0);
+}
+#content
+{
+	margin-top: 10px;
+	margin-right: 5px;
+	float: right;
+	width: 84%;
+}
+#ing_list ul
+{
+	/* 	list-style: circle; */
+	/* 	margin: 10px; */
+}
+
+#over-container
+{
+	padding: 30px;
+}
+
+#send
+{
+	display: block;
+	float: right;
+	clear: right;
+	margin-top: 50px;
+}
+#amount_sum
+{
+	display: block;
+	float: right;
+	clear: right;
+	margin-top: 10px;
+}
+
+#cocktail-overview
+{
+	z-index: 1000;
+}
+
+#cocktail_canvas
+{
+	float: left;
+	margin-right: 10px;
+}
+ul#navi
+{
+	list-style-type:none;
+	float: left;
+	margin:0;
+	padding-left:0;
+	width: 14%;
+	background-color: #E4E4E4;
+	float: left;
+	box-shadow: 2px 0px 5px black;
+/* 	min-height: 500px; */
+}
+
+ul#navi a, ul#Navigation span, ul#Navigation h2
+{
+	display:block;
+	padding: 0.5em;
+	text-decoration: none; font-weight: bold;
+	color: black;
+}
+
+ul#navi li:nth-child(odd):hover a
+{
+	animation: nav-anim-1 2s;
+	background-color: #3399FF;
+	transform: scale(1.05);
+	color: white;
+}
+
+@keyframes nav-anim-1
+{
+	from
+	{
+		background-color: #E4E4E4;
+		transform: scale(1);
+		color: black;
+	}
+	
+	to
+	{
+		background-color: #3399FF;
+		transform: scale(1.05);
+		color: white;
+	}
+}
+ul#navi li:nth-child(even):hover a
+{
+	animation: nav-anim-2 2s;
+	background-color: #00CC00;
+	transform: scale(1.05);
+	color: white;
+}
+
+@keyframes nav-anim-2
+{
+	from
+	{
+		background-color: #E4E4E4;
+		transform: scale(1);
+		color: black;
+	}
+	
+	to
+	{
+		background-color: #00CC00;
+		transform: scale(1.05);
+		color: white;
+	}
+}
+
+ul#navi li:nth-child(odd) a {
+	background-color: #ccc;
+}
+ul#navi li:nth-child(even) a {
+	background-color: white;
+}
+
+.heading
+{
+	padding-left: 10px;
+	background-color: #E4E4E4;
+}
+
+
+
+#editor
+{
+	min-width: 500px;
+	min-height: 600px;
+}
+#selection_btn
+{
+	z-index: 100;
+	position: fixed;
+	right: 20px;
+	bottom: 2px;
+}
+
+#dialog-modal
+{
+	z-index: 1000;
+}
+
+#login_set
+{
+	position: fixed;
+	clear: both;
+	padding: 10px;
+	box-shadow: 0px 0px 8px black;
+	margin: auto auto;
+	width: 40%;
+	left: 30%;
+	height: 30%;
+	top: 35%;
+}
+
+.pulse
+{
+	animation-duration: 6s;
+	animation-name: pulse;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	-webkit-animation-duration: 6s;
+	-webkit-animation-name: pulse;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+}
+
+@keyframes pulse
+{
+	from {
+		box-shadow: 0px 0px 10px #0ff;
+	}
+	50% {
+		box-shadow: 0px 0px 25px #ff0;
+	}
+	
+	to {
+		box-shadow: 0px 0px 40px #f00;
+	}
+}
+@-webkit-keyframes pulse /* Safari and Chrome */
+{
+	from {
+		box-shadow: 0px 0px 10px #0ff;
+	}
+	50% {
+		box-shadow: 0px 0px 25px #ff0;
+	}
+	
+	to {
+		box-shadow: 0px 0px 40px #f00;
+	}
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
